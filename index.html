@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Claire Kim</title>
+		<link rel="icon" type="image/gif" href="images/sun.gif">
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+		<main>
+			<header>
+				<a href="index.html"><img id="icon" src="images/sun.gif" srcset="images/sun-2x.gif 2x"width="300" height="295" alt="Image of sun"></a>
+				<p>Claire Kim</p>
+			</header>
+
+			<nav>
+				<a href="works.html">works</a>
+				<a href="wips.html">wips</a>
+				<a href="about.html">about</a>
+				<a href="contact.html">contact</a>
+			</nav>
+
+			<figure id="navi-image1">
+				<div>
+					<a href="works.html">
+					<img src="images/blanket.png" 
+					srcset="images/blanket-2x.png 2x"
+					width="250" 
+					height="250" 
+					alt="Image of cat on blanket" 
+					onmouseover="replaceImg1(this)" onmouseout="oldImg1(this)"></a>
+					<p id="caption">works</p>
+				</div>
+
+				<div>
+					<a href="wips.html">
+					<img src="images/pistachio.png" 
+					srcset="images/pistachio-2x.png 2x"
+					width="250" 
+					height="250" 
+					alt="Image of cat with pistachio"
+					onmouseover="replaceImg2(this)" onmouseout="oldImg2(this)"></a>
+					<p id="caption">wips</p>
+				</div>
+			</figure>
+
+			<figure id="navi-image2">
+				<div>
+					<a href="about.html">
+					<img src="images/tail.png" 
+					srcset="images/tail-2x.png 2x"
+					width="250" height="250" 
+					alt="Image of cat with large tail"
+					onmouseover="replaceImg3(this)" onmouseout="oldImg3(this)"></a>
+					<p id="caption">about</p>
+				</div>
+
+				<div>
+					<a href="contact.html">
+					<img src="images/sleep.png" 
+					srcset="images/sleep-2x.png 2x"
+					width="250" 
+					height="250" 
+					alt="Image of cat sleeping"
+					onmouseover="replaceImg4(this)" onmouseout="oldImg4(this)"></a>	
+					<p id="caption">contact</p>	
+				</div>	
+			</figure>
+		</main>
+
+		<footer>
+			<a href="https://www.nyu.edu">Introduction to Web Design</a></p>
+		</footer>
+
+		<script src="javascript.js"></script>
+	</body>
+</html>

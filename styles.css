@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@font-face {
+ font-family: 'Sorts Mill Goudy';
+ src: url('fonts/GoudyStMwebfont.woff'), url('fonts/GoudyStMwebfont.ttf');
+}
+
+#icon {
+  width: 7%;
+  height: auto;
+  margin-top: 3em;
+  margin-left: 5em;
+}
+
+footer {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 4em;
+  padding-bottom: 0;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #988C7E;
+}
+
+header > p {
+  margin-left: 6.5em;
+  font-family: 'Cookie', sans-serif;
+  color: #ADD8E6;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #988C7E
+}
+
+a:active {
+  color: #988C7E;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 5em;
+  right: 10em;
+}
+
+nav > a {
+  font-family: 'Noto Sans', sans-serif;
+  margin-right: 2em;
+  color: #988C7E;
+}
+
+a:hover {
+  color: #FF999B;
+}
+
+nav > a:link {
+  text-decoration: none;
+}
+
+#navi-image1, #navi-image2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#caption {
+  text-align: center;
+}
+
+#realism, #food, #animation, #cats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#realism > img, #food > img{
+  width: 30%;
+  height: auto;
+  margin: 2em;
+}
+
+#animation > img {
+  width: 20%;
+  height: auto;
+  padding: 5em;
+}
+
+#cats > img {
+  width: 50%;
+  height: auto;
+}
+
+#wip1, #wip2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#wip1 > img, #wip2 > img{
+  width: 40%;
+  height: auto;
+  padding: 4em;
+}
+
+.about > img {
+  width: 40%;
+  height: auto;
+  margin-left: 12em;
+}
+
+.b > p , .c > p{
+  font-size: 0.9em;
+}
+
+.c {
+  margin-bottom: 5em;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  grid-template-areas:
+  'a b'
+  'a c';
+}
+
+.about > h1 {
+  font-family: 'Sorts Mill Goudy', sans-serif;
+}
+
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+
+h1, p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+}
+
+#about-heading {
+  color: #8A9A5B;
+}
+
+form {
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px lightblue;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  gap: 10px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.form-align {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media only screen and (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #2E3842;
+    color: white;
+  }
+
+  form {
+    background-color: #434f5c;
+  }
+
+  img {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 40em) {
+
+  #navi-image1, #navi-image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #realism, #food, #animation, #cats {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3em;
+  }
+
+  .about > img {
+    width: 60%;
+    height: auto;
+    margin: 5em;
+  }
+
+  #wip1, #wip2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  #wip1 > img, #wip2 > img{
+    width: 90%;
+    height: auto;
+    padding: 2em;
+  }
+
+  #realism > img, #food > img, #cats > img{
+    width: 100%;
+    height: auto;
+    margin: 1em;
+  }
+
+  #animation > img {
+    width: 50%;
+    height: auto;
+    margin: 1em;
+  }
+
+  #icon {
+    width: 15%;
+    height: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  header > p {
+    font-size: 1.2em;
+    margin-left: 1em;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: right;
+    top: 1em;
+    right: 0;
+  }
+
+  nav > a {
+    padding: 0.2em;
+  }
+}
+
